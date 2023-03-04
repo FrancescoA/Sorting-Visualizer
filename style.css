@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: Verdana;
+  font-size: 48px;
+}
+
+h2 {
+  text-align: center;
+  font-family: Verdana;
+  margin: 1em 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 3rem;
+}
+
+#caption {
+  min-height: 2rem;
+  font-size: 16px;
+}
+
+menu {
+  display: flex;
+  justify-content: space-around;
+  background:rgb(92, 163, 255);
+  padding: 1rem;
+  border-top: 4px solid rgba(0, 0, 0, 0.5);
+}
+
+button, select {
+  padding: .75em;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid black;
+  font-family: Verdana;
+  text-align: center;
+  background: whitesmoke;
+}
+
+button:hover {
+  background: white;
+  box-shadow: 0 0 1px 1px rgb(168, 168, 168) inset;
+}
+
+option {
+  text-align: left;
+  cursor: pointer;
+}
+
+.bars {
+  height: 500px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100px;
+  background: whitesmoke;
+  border: 1px solid black;
+  box-sizing: content-box;
+  text-align: center;
+  overflow: hidden;
+}
+
+.bar[state="inactive"] {
+  background: whitesmoke;
+}
+
+.bar[state="comparing"] {
+  background: lime;
+}
+
+.bar[state="swapping"] {
+  background: red;
+}
+
+.bar[state="shifting"] {
+  background: rgb(0, 162, 255);
+}
+
+.bar[state="flushing"] {
+  background: orange;
+}
+
+.bar[state="queuing"] {
+  background: rgb(221, 221, 221);
+}
+
+#fullscreen {
+  margin: 2rem;
+}
+
+.prova {
+  background: pink;
+}
+
+.info {
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  padding: .5em 1.5em;
+  border-radius: .25em;
+  margin: 1rem auto 0 auto;
+}
+
+.info div {
+  font-family: 'Fira Code', monospace;
+  font-weight: 400;
+}
+
+.info div span {
+  font-size: 1.1em;
+  font-weight: 500;
+}

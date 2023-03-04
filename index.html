@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="style.css">
+  <title>Sorting Visualizer</title>
+</head>
+<body>
+  <h1>Sorting Visualizer</h1>
+  <h2>A simple tool to visualize some sorting algorithms</h2>
+
+  <div class="container">
+
+    <div id="caption"></div>
+    
+    <div class="bars" id="barContainer">
+    </div>
+
+    <menu id="menu">
+      <button id="randomize">Generate new random array</button>
+      <select name="algorithms" id="algorithm">
+        <option name="algorithm" value="bubbleSort">Bubble Sort</option>
+        <option name="algorithm" value="insertionSort">Insertion Sort</option>
+        <option >more on the way...</option>
+      </select>
+      <button id="sort">Sort!</button>
+    </menu>
+
+    <div class="info">
+      <div>Comparisons: <span id="comparisonCount"></span></div>
+      <div>Swaps: <span id="swapCount"></span></div>
+      <div>Duration: <span id="timer"></span></div>
+    </div>
+
+  </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>
